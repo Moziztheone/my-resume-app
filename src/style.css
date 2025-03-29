@@ -1,0 +1,128 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  /* Background Image */
+  /* Header Section */
+.header {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Centers text inside the header */
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .header-title {
+    font-size: 5rem; /* Large font size for the name */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .header-description {
+    font-size: 2rem; /* Medium font size for description */
+    margin-bottom: 20px; /* Space below the description */
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 15px; /* Space between navigation links */
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 50px;
+    text-align: center;
+  }
+  .projects-section h2 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 30px; /* Add spacing below the title */
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-card {
+    width: calc(33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 6px -1px, rgba(0,0,0,0.06) 0px 2px 4px -1px;
+  }
+  
+  .project-card h3 {
+    margin-bottom: .5rem;
+  }
+  
+  .project-card a {
+    color: #007bff;
+  }
+  
+  .project-card a:hover {
+     text-decoration : underline ;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+     padding :40 px ;
+     text-align: center;
+     }
+
+    /* About Section */
+  .about {
+    padding: 50px; /* Add spacing around the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    text-align: center; /* Center-align text */
+    }
+ 
+  .about h2 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    }
+ 
+  .about p {
+    font-size: 1.2rem; /* Slightly larger font size for the paragraph */
+    line-height: 1.6; /* Improve readability with line spacing */
+    max-width: 800px; /* Limit width of the paragraph for better readability */
+    margin: auto; /* Center the paragraph within the section */
+    }
+  
+  /* Animations */
+  .animate-fade-in { animation :fadeIn ease-in-out ;}
+  
+    @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
